@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  my-argo-cd:
+  - apiVersion: v2
+    created: "2021-11-25T00:20:50.3851678Z"
+    dependencies:
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 2.11.0
+    digest: 11bd13f1081b94c4d7cc78b34d4e34ecfec7d507c9512d56c7e87b1fc234f23e
+    name: my-argo-cd
+    urls:
+    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-argo-cd-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-11-25T00:20:50.3783307Z"
