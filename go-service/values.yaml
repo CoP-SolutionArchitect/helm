@@ -5,13 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+#  repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+#  tag: ""
 
 resources: {}
-fullnameOverride: "go-service-reviews-2"
+#fullnameOverride: "go-service-reviews-2"
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -22,10 +22,6 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
-podAnnotations: {
-        "dapr.io/enabled": "true",
-        "dapr.io/app-id": "reviews"
-}
 
 podSecurityContext: {}
   # fsGroup: 2000
