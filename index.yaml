@@ -9,9 +9,9 @@ entries:
     name: go-service
     type: application
     urls:
-    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/go-service-0.1.0.tgz
-    - https://github.com/CoP-SolutionArchitect/helm/raw/main/go-service-0.1.0.tgz
-    version: 0.1.0
+    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/go-service-0.1.1.tgz
+    - https://github.com/CoP-SolutionArchitect/helm/raw/main/go-service-0.1.1.tgz
+    version: 0.1.1
   my-argo-cd:
   - apiVersion: v2
     appVersion: 1.16.0
