@@ -1,30 +1,30 @@
 {{- if .Values.ingress.enabled -}}
+
+
 {{- $fullName := include "temp.fullname" . -}}
 {{- $svcPort := .Values.service.port -}}
+{{- $host := .Values.ingress.host -}}
+{{- $path := .Values.ingress.path -}}
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ $fullName }}
-  {{- with .Values.ingress.annotations }}
+  name: reviews
   annotations:
-    {{- toYaml . | nindent 4 }}
-  {{- end }}
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
-    {{- range .Values.ingress.hosts }}
-    - host: {{ .host | quote }}
-      http:
-        paths:
-          {{- range .paths }}
-          - path: {{ .path }}
-            path: {{ .pathType }}
-            backend:
-              service:
-                name: {{ $fullName }}
-              port: 
-                number:  {{ $svcPort }}
-          {{- end }}
-    {{- end }}
+  - host: {{ $host }} 
+    http:
+      paths:
+      - pathType: Prefix
+        path: {{ $path }}
+        backend:
+          service:
+            name: {{ $fullName }}
+            port:
+              number: {{ $svcPort }}
+ 
 {{- end }}
 
 

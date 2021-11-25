@@ -37,5 +37,3 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
-ingress:
-  enabled: false
