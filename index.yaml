@@ -23,5 +23,5 @@ entries:
     urls:
     - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-argo-cd-1.0.0.tgz
     - https://github.com/CoP-SolutionArchitect/helm/raw/main/my-argo-cd-1.0.0.tgz
-    version: 0.1.0
+    version: 1.0.0
 generated: "2021-11-25T01:31:42.9305094Z"
