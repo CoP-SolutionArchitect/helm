@@ -10,6 +10,6 @@ entries:
     digest: bd784593904dc0ea07454dec343ff4e706a268e26bcdfe25cc024fa2a2e20872
     name: my-argo-cd
     urls:
-    - https://github.com/CoP-SolutionArchitect/helm/tree/main/my-argo-cd-1.0.0.tgz
+    - https://github.com/CoP-SolutionArchitect/helm/tree/main/
     version: 1.0.0
 generated: "2021-11-25T00:33:38.474633Z"
