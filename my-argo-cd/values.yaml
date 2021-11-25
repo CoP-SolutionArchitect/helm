@@ -8,20 +8,14 @@ my-argo-cd:
   server:
     ingress:
       annotations:
-        kubernetes.io/ingress.class: nginx
-      # hosts: 
-      #   - argo.137-184-240-69.nip.io
-      enabled: true
-      # hostname: argo.137-184-240-69.nip.io
+        kubernetes.io/ingress.class: nginx 
+      enabled: true 
       tls: false
       selfSigned: false
     ingressGrpc:
       annotations:
-        kubernetes.io/ingress.class: nginx
-      # hosts: 
-      #   - argo.137-184-240-69.nip.io
-      enabled: true
-      # hostname: argo.137-184-240-69.nip.io
+        kubernetes.io/ingress.class: nginx 
+      enabled: true 
       tls: false
       selfSigned: false    
     insecure: true    
