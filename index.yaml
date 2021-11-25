@@ -1,15 +1,25 @@
 apiVersion: v1
 entries:
+  go-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-11-25T01:28:33.9026857Z"
+    description: A Helm chart for Kubernetes
+    digest: f2a63b5161ebe9a038d164a8c5273206bb5670768bedb6d96a2b399ae8a3a91f
+    name: go-service
+    type: application
+    urls:
+    - https://github.com/CoP-SolutionArchitect/helm/go-service-0.1.0.tgz
+    version: 0.1.0
   my-argo-cd:
   - apiVersion: v2
-    created: "2021-11-25T01:17:09.9578447Z"
-    dependencies:
-    - name: argo-cd
-      repository: https://argoproj.github.io/argo-helm
-      version: 2.11.0
-    digest: 5eac855734cec9510235b15e25a267f2c8442ec669db76d1d9755047b233bc50
+    appVersion: 1.16.0
+    created: "2021-11-25T01:28:33.9052774Z"
+    description: A Helm chart for Kubernetes
+    digest: d3a2db65146cbd96f53b89a81294b94f536027722b860558519591a437ff5826
     name: my-argo-cd
+    type: application
     urls:
-    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-argo-cd-1.0.0.tgz
-    version: 1.0.0
-generated: "2021-11-25T01:17:09.9516639Z"
+    - https://github.com/CoP-SolutionArchitect/helm/my-argo-cd-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-11-25T01:28:33.8998116Z"
