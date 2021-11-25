@@ -1,4 +1,4 @@
-my-argo-cd:
+argo-cd:
   installCRDs: false
   global:
     image:
