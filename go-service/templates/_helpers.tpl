@@ -34,6 +34,7 @@ Create chart name and version as used by the chart label.
 Common labels
 */}}
 {{- define "go-service.labels" -}}
+
 helm.sh/chart: {{ include "go-service.chart" . }}
 {{ include "go-service.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
@@ -48,6 +49,10 @@ Selector labels
 {{- define "go-service.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "go-service.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
+{{- range $key, $value := .Values.labels }}
+{{ $key }}: {{ $value }} 
+{{- end }}
+app: {{ include "go-service.fullname" . }}
 {{- end }}
 
 {{/*
