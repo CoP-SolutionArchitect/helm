@@ -2,26 +2,50 @@ apiVersion: v1
 entries:
   go-service:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-11-25T01:31:42.9331484Z"
+    appVersion: latest
+    created: "2021-11-30T01:17:23.8733637Z"
     description: A Helm chart for Kubernetes
-    digest: f2a63b5161ebe9a038d164a8c5273206bb5670768bedb6d96a2b399ae8a3a91f
+    digest: 1f2433d8619af9f3fc133151e80ca8a81b7a673ec461325d42aef61640d46ce6
     name: go-service
     type: application
     urls:
-    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/go-service-0.1.5.tgz
     - https://github.com/CoP-SolutionArchitect/helm/raw/main/go-service-0.1.5.tgz
+    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/go-service-0.1.5.tgz
     version: 0.1.5
   my-argo-cd:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-11-25T01:31:42.935474Z"
-    description: A Helm chart for Kubernetes
-    digest: d3a2db65146cbd96f53b89a81294b94f536027722b860558519591a437ff5826
+    created: "2021-11-30T01:17:23.8809237Z"
+    digest: f17d3bd2d17b78a15fe6b172c8ad4de599c828bc29fe884c4b559b8b6a37e425
     name: my-argo-cd
-    type: application
     urls:
-    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-argo-cd-1.0.0.tgz
-    - https://github.com/CoP-SolutionArchitect/helm/raw/main/my-argo-cd-1.0.0.tgz
-    version: 1.0.0
-generated: "2021-11-25T01:31:42.9305094Z"
+    - https://github.com/CoP-SolutionArchitect/helm/raw/main/my-argo-cd-2.11.0.tgz
+    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-argo-cd-2.11.0.tgz
+    version: 2.11.0
+  my-dapr:
+  - apiVersion: v2
+    created: "2021-11-30T01:17:23.8876633Z"
+    digest: 0a1123680f3abaab221153381b073d330a16c13a9120458e4a5cc9370ab8b1ac
+    name: my-dapr
+    urls:
+    - https://github.com/CoP-SolutionArchitect/helm/raw/main/my-dapr-1.5.0.tgz
+    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-dapr-1.5.0.tgz
+    version: 1.5.0
+  my-kafka:
+  - apiVersion: v2
+    created: "2021-11-30T01:17:23.8983823Z"
+    digest: aa1c0acf188928218e9c187c7071e95f054f667cded76e0c5c807f3fdd6a4258
+    name: my-kafka
+    urls:
+    - https://github.com/CoP-SolutionArchitect/helm/raw/main/my-kafka-14.4.3.tgz
+    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-kafka-14.4.3.tgz
+    version: 14.4.3
+  my-mongodb:
+  - apiVersion: v2
+    created: "2021-11-30T01:17:23.9063501Z"
+    digest: c834184d19449a8f179688a42ed0d82f666c9e52ef1ade7b3189afb9bcd9f7d3
+    name: my-mongodb
+    urls:
+    - https://github.com/CoP-SolutionArchitect/helm/raw/main/my-mongodb-10.30.0.tgz
+    - https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/my-mongodb-10.30.0.tgz
+    version: 10.30.0
+generated: "2021-11-30T01:17:23.8702726Z"

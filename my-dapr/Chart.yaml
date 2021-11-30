@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-dapr
+version: 1.5.0
+dependencies:
+  - name: dapr 
+    version: 1.5.0
+    repository: https://dapr.github.io/helm-charts/

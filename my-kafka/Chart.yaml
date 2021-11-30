@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-kafka
+version: 14.4.3
+dependencies:
+  - name: kafka  
+    version: 14.4.3
+    repository: https://charts.bitnami.com/bitnami
