@@ -1,3 +1,5 @@
+
+{{- if .Values.dapr.enabled -}}
 apiVersion: dapr.io/v1alpha1
 kind: Component
 metadata:
@@ -14,6 +16,7 @@ spec:
     value: "4IxFfCjxq3root"  
   - name: databaseName
     value: admin  
-
+ 
+{{- end }}
 
  

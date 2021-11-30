@@ -9,7 +9,7 @@ image:
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
 #  tag: ""
-
+dapr.enabled: false
 resources: {}
 #fullnameOverride: "go-service-reviews-2"
 

@@ -11,7 +11,7 @@ argo-cd:
         kubernetes.io/ingress.class: nginx
       # hosts: 
       #   - argo.137-184-240-69.nip.io
-      enabled: true
+      enabled: false
       # hostname: argo.137-184-240-69.nip.io
       tls: false
       selfSigned: false
@@ -20,7 +20,7 @@ argo-cd:
         kubernetes.io/ingress.class: nginx
       # hosts: 
       #   - argo.137-184-240-69.nip.io
-      enabled: true
+      enabled: false
       # hostname: argo.137-184-240-69.nip.io
       tls: false
       selfSigned: false    

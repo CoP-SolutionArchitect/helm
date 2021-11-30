@@ -2,13 +2,12 @@
 
 helm add repo https://raw.githubusercontent.com/CoP-SolutionArchitect/helm/main/
 helm install \
-    --set my-argo-cd.server.ingress.hosts={argo.137-184-240-69.nip.io}      \
-    --set my-argo-cd.server.ingress.hosts=argo.137-184-240-69.nip.io        \
-    --set my-argo-cd.server.ingressGrpc.hosts={argo.137-184-240-69.nip.io}  \
-    --set my-argo-cd.server.ingressGrpc.hostname=argo.137-184-240-69.nip.io  \
+    --set argo-cd.server.ingress.enabled=false      \
+    --set argo-cd.server.ingressGrpc.enabled=false       \
+  
     argo-cd my-argo-cd 
 
-
+https://argo.127-0-0-1.nip.io/
 helm repo list 
 help add repo name URL
 helm create name 
